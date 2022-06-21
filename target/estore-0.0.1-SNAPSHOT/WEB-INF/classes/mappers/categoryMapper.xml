@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.briup.dao.CategoryMapper">
+    <resultMap type="category" id="CategoryWithChildCategory">
+    	<id property="id" column="id"/>    
+    	<result property="name" column="name"/>
+    	<result property="description" column="description"/>
+    	<collection property="categories" resultMap="category"></collection>
+    </resultMap>
+    
+    <resultMap type="category" id="category">
+       <id property="id" column="eid"/>
+       <result property="name" column="ename"/>
+       <result property="description" column="edescription"/>
+    </resultMap>
+    
+
+	<select id="findAllCategorys" resultMap="CategoryWithChildCategory">
+	     select e1.id,e1.name,e1.description,e2.id eid,e2.name ename,e2.description edescription
+	     from es_category e1 left JOIN es_category e2
+	     on e1.id = e2.parent_id
+	     where e1.parent_id=0;
+	</select>
+	
+</mapper>
+
+
+
+

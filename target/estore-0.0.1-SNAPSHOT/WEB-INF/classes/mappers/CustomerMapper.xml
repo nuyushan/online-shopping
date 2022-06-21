@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.briup.dao.CustomerMapper">
+
+	<insert id="saveCustomer" parameterType="customer" useGeneratedKeys="true" keyProperty="id">
+	    insert into es_customer(name,password,zipCode,address,telephone,email)
+	    values(#{name},#{password},#{zipCode},#{address},#{telephone},#{email})
+	</insert>
+	
+	<resultMap type="customer" id="CustomerResult">
+	   <id property="id" column="id"/>
+	   <result property="name" column="name"/>
+	   <result property="password" column="password"/>
+	   <result property="zipCode" column="zipCode"/>
+	   <result property="address" column="address"/>
+	   <result property="telephone" column="telephone"/>
+	   <result property="email" column="email"/>
+	</resultMap>
+	
+	<select id="findCustomerByName" parameterType="String" resultMap="CustomerResult">
+	     select id,name,password,zipCode,address,telephone,email
+	     from es_customer
+	     where name=#{name}
+	</select>
+	
+</mapper>
+
+
+
+

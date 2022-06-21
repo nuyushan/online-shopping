@@ -1,0 +1,65 @@
+.carousel{
+			width: 696px;
+			height: 300px;
+			margin: 6px auto;
+			/*border: 1px solid #000;*/
+			position: relative;
+			overflow: hidden;
+		}
+		.carousel .m_unit{
+			width: 9000px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.carousel .m_unit ul{
+			list-style: none;
+		}
+		.carousel .m_unit ul li{
+			float: left;
+			width: 560px;
+			height: 300px;
+			overflow: hidden;
+		}
+		.carousel .m_unit ul li img{
+			display:inline-block;
+			width: 100%;
+			height: 100%;
+		}
+		.btns a{
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			top: 50%;
+			margin-top: -20px;
+			background-color: yellow;
+			z-index: 999;
+		}
+		.btns a.leftBtn{
+			left: 10px;
+		}
+		.btns a.rightBtn{
+			right: 10px;
+		}
+		.circles{
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+			width: 150px;
+			height: 18px;
+		}
+		.circles ol{
+			list-style: none;
+		}
+		.circles ol li{
+			float: left;
+			width: 18px;
+			height: 18px;
+			margin-right: 10px;
+			border-radius: 50%;
+			background-color: pink;
+			cursor: pointer;
+		}
+		.circles ol li.cur{
+			background-color: purple;
+		}

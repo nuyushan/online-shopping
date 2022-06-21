@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.briup.dao.OrderFormMapper">
+   
+   <insert id="saveOrderForm" parameterType="orderForm" useGeneratedKeys="true" keyProperty="id">
+      insert into es_orderform(cost,orderDate,shopAddress_id,customer_id)
+      values(#{cost},#{orderdate},#{shopAddress.id},#{customer.id})
+   </insert>
+   
+   <resultMap type="orderForm" id="OrderFormResult">
+      <id property="id" column="id"/>
+      <result property="cost" column="cost"/>
+      <result property="orderdate" column="orderDate"/>
+      <association property="shopAddress" column="shopAddress_id" select="findAddressById"></association>
+      <collection property="orderLines" column="id" select="findOrderLineByOrderFormId"></collection>
+   </resultMap>
+   
+   
+   <select id="findOrderFormByCustomerId" parameterType="int" resultMap="OrderFormResult">
+       select id,cost,orderDate,shopAddress_id,customer_id
+       from es_orderform
+       where customer_id = #{id}
+   </select>
+   
+   <select id="findAddressById" parameterType="int" resultType="shopAddress">
+      select id,receiveName,address,phone
+      from es_shopaddress
+      where id=#{id}
+   </select>
+   
+   <select id="findOrderLineByOrderFormId" parameterType="int" resultType="orderLine">
+      select id,num,cost
+      from es_orderline
+      where orderForm_id = #{id}
+   </select>
+   
+   <select id="findOrderFormByOrderid" parameterType="int" resultMap="OrderFormResult">
+       select id,cost,orderDate,shopAddress_id,customer_id
+       from es_orderform
+       where id = #{id}
+   </select>
+   
+   <delete id="deleteOrderFormById" parameterType="int">
+       delete from es_orderform
+       where id = #{id}
+   </delete>
+   
+</mapper>

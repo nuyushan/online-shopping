@@ -1,0 +1,126 @@
+/* CSS Document */
+*{ 
+	margin:0;
+	padding:0;
+	font-size:12px;
+	font-family:"微软雅黑","宋体";
+	color:#666;
+}
+img{
+	border:none; 
+	display:block;
+}
+h1,h2,h3{font-weight:normal;}
+a{ text-decoration:none;}
+li{ list-style:none;}
+b{ font-weight:normal}
+
+.fl{
+	float:left;	
+}
+.fr{
+	float:right;	
+}
+
+.clear{ clear:both}
+.c10{ height:10px;}
+.c15{ height:15px;}
+.c20{ height:20px;}
+.c1dotted{
+	height:1px;
+	border-bottom:1px dotted #ddd;
+}
+.center02{/*居中*/
+	width:1000px;
+	margin:0 auto;	
+}
+.center01{/*居中*/
+	width:1200px;
+	margin:0 auto;	
+}
+
+.bkr_fw{
+	background-color:#e7000e;
+	color:#fff;
+}
+/*字体大小*/
+.font20{/*20号字体*/
+	font-size:20px;
+	color:#666666;
+	font-weight:bold;
+}
+.font15{
+	font-size:16px;
+	color:#555555;
+	font-weight:bold;
+}
+/*字体颜色*/
+.color_red1{
+	color:#df2020;	
+}
+.color_link1{
+	color:#2272c8;
+}
+/*字体居中*/
+.text_center{
+	text-align:center;
+}
+.p_h42{
+	height:42px;
+	line-height:42px;
+}
+
+.box{/*盒子*/
+	border:1px solid #ddd;	
+}
+
+
+.service_fq{
+	float:left;
+	padding:0 10px 0 17px;
+	background:url(../images/icons/service_03.png) no-repeat left;
+}
+.service_myf{
+	float:left;
+	padding:0 10px 0 17px;
+	background:url(../images/icons/service_05.png) no-repeat left;
+}
+.service_zt{
+	float:left;
+	padding:0 10px 0 17px;
+	background:url(../images/icons/service_07.png) no-repeat left;
+}
+.service_th{
+	float:left;
+	padding:0 10px 0 17px;
+	background:url(../images/icons/service_09.png) no-repeat left;
+}
+
+
+.tabs_01{
+	height:21px;
+	border-bottom:1px solid #ddd;
+}
+.tabs_01 li{
+	padding:0 10px;
+	height:20px;
+	line-height:20px;
+	margin:0 5px;
+	float:left;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-top:1px solid #ccc;
+}
+.tabs_01 li.current{
+	color:#df2020;
+	position:relative;
+	bottom:0;
+	background:#fff;
+	height:21px;
+}
+
+
+
+
+
+

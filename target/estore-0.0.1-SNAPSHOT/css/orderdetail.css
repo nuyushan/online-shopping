@@ -1,0 +1,50 @@
+.shop_detail{
+	height:40px;
+	text-align:center;
+	line-height: 40px;
+	color:black;
+	background:#D81F27
+}
+.container4{
+	min-height: 300px;
+	/*background:#EEEEEE*/
+}
+.container4 table{
+	/*border-right:1px solid #D81F27;
+	border-left: 1px solid #D81F27;*/
+}
+.container4 table thead tr th{
+	width: 200px;
+	height: 40px;
+	background: #D81F27;
+	border-right: 1px solid #ccc;
+	font: bold;
+	color: black;
+
+}
+.container4 table tbody tr td{
+	width: 240px;
+	height: 40px;
+	text-align: center;
+	color:black;
+	font-family: sans-serif;
+	border:1px solid #ccc
+}
+.container4 table tbody tr .count{
+	text-align:right;
+	border:none;
+	margin-right:200px;
+	font-size: 20px;
+}
+.container4 table tbody tr .count span {
+	font-size: 20px;
+	color:red;
+}
+.container4 table tbody tr td input{
+	width:60px;
+	height:20px;
+	margin-right: 6px;
+	background:#66B6FF;
+	/*border:none*/
+
+}

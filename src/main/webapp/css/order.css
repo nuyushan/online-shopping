@@ -1,0 +1,508 @@
+.top{
+	border:1px solid #ececec;	
+
+}
+.top_center{
+	height:30px;
+	width:1200px;
+	margin:0 auto;	
+
+}
+.top_center .ship{
+	height:31px;
+	width:108px;
+	background-color:#FFF;
+	line-height:31px;
+	text-align:center;
+	float:left;
+	cursor:pointer;
+}
+.top_center .ship b{
+	color:red;
+}
+.top_center .top_bars{
+	float:right;	
+}
+.top_center .top_bars li{
+	float:left;	
+}
+.top_bars li a{
+	height:30px;
+	line-height:30px;	
+	padding:0 15px;
+}
+
+
+.bgred{
+	background-color: #F94B4B
+}
+.header3{
+	width:1200px;
+	margin:0 auto;	
+	overflow:hidden;
+
+}
+.header3 img{
+	float:left;
+	margin:28px 108px 22px 0;	
+}
+.header3 .h3_center{
+	float:left;
+	margin:40px 0 0 -10px;	
+}
+
+.h3_center p{
+	height:16px;
+	line-height:16px;
+	margin:10px 0;
+
+}
+.h3_center p a{
+	padding:0 10px;
+	color: #fff	;
+	font-size:14px;
+}
+
+.header3 .h3_right{
+	float:right;	
+	margin-top:34px;
+
+}
+.h3_right div{
+	float:left;	
+	height:30px;
+	line-height:30px;
+	
+	margin-left:20px;
+	padding-left:32px;
+	cursor:pointer;
+}
+.h3_right div.myyy{
+	margin-right: 8px;
+}
+.h3_right div.myyy input{
+	width: 124px;
+	height: 31px;
+	float: left
+}
+.h3_right div.myyy span{
+	background-color: #f7f7f7;
+	height: 31px;
+	width: 58px;
+	float: left;
+	margin-top: 1px;
+	text-align: center;
+	font-size: 14px
+}
+
+.h3_right div.tsc{
+	background:	#f7f7f7 url(../images/icons/shopcar_06.png) no-repeat 6px 6px;
+}
+
+
+/*脚部样式*/
+.f3_top{
+	border-bottom:2px solid #ed0042;
+	background-color:#eeeeee;
+	overflow:hidden;
+}
+.f3_center{
+	width:1200px;
+	margin:0 auto;		
+}
+.f3_top>.f3_center>div{
+	float:left;	
+	height:45px;
+	line-height:45px;
+	padding-left:55px;	
+	font-size:20px;
+	color:#000;
+	margin:43px 30px;
+}
+.f3_top .ts1{
+	background:url(../images/icons/icon_1_17.png) no-repeat left;
+}
+.f3_top .ts2{
+	background:url(../images/icons/icon_1_20.png) no-repeat left;
+}
+.f3_top .ts3{
+	background:url(../images/icons/icon_1_23.png) no-repeat left;	
+}
+.f3_top .ts4{
+	background:url(../images/icons/icon_1_25.png) no-repeat left;
+}
+.f3_middle{
+	height:236px;
+	background-color:#f4f4f4	
+}
+.f3_middle li{
+	float:left;
+	width:80px;
+	padding:30px 50px;
+}
+.f3_middle li h1{
+	font-size:16px;
+	line-height:30px;
+	height:30px;	
+}
+.f3_middle li p{
+	line-height:20px;
+	height:20px;	
+}
+.f3_mi_li01{
+	background:url(../images/icons/icon_1_32.png) no-repeat 0 40px;	
+}
+
+.f3_middle .f3_mi_li06{
+	width:200px;
+	background:url(../images/icons/icon_1_45.png) no-repeat 0 40px;	
+}
+.f3_mi_li06 img{
+	float:left;
+}
+.f3_mi_li06 p{
+	margin-left:90px;
+}
+
+.f3_bottom{
+	padding:20px 0;
+	height:90px;	
+	background-color:#f7f7f7;
+	text-align:center;
+}
+.f3_links{
+	height:20px;
+	line-height:20px;
+	margin:5px 0;	
+}
+.f3_links a{
+	padding:0 8px;	
+}
+
+.f3_bottom>img{
+	margin:10 auto;	
+	
+}
+
+
+
+
+.content{
+	background-color: #F2F0F0;
+	border:1px solid #F2F0F0;
+	overflow: hidden;
+}
+.contentCenter{
+	margin:0 auto;
+	width: 1758px;
+
+
+}
+.contentCenter .contentLeft{
+		width: 112px;
+		height:646px;
+		background-color: #fff;
+		text-align: center;
+		margin-top: 20px;
+		float: left
+		
+}
+.contentCenter .contentLeft ul{
+	float: left;
+	margin:10 12px;
+
+}
+
+.contentCenter .contentLeft ul li{
+	color: #666;
+	font-size: 12px;
+	margin-bottom: 12px;
+
+}
+.contentCenter .contentLeft ul .firstLi{
+	font-weight: bold;
+	color: #333333;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+.cnotentRight{
+	width:1623px;
+	margin-top: 20px;
+	margin-left: 12px;
+	float: left;
+	background-color: #fff;
+
+}
+.contentRightHeader{
+	overflow: hidden;
+	border-bottom: 1px solid #CCCCCC
+}
+.orderList{
+	float: left
+}
+.orderList ul{
+	height: 40px;
+}
+.orderList ul li{
+	float: left;
+	margin-left: 20px;
+	color: #666;
+	font-size: 15px;
+	margin-top:14px;
+}
+.orderList ul li font{
+	color: red;
+	margin-right: 30px
+}
+.orderList ul li p{
+	float: right;
+	color: #F0EBF0
+}
+.ruby{
+	float: right;
+	margin-right: 14px;
+	margin-top:12px;
+}
+.ruby img{
+	float: left;
+	margin-top: 5px;
+	margin-right: 3px
+}
+.ruby p{
+	float: left;
+	width: 85px;
+	color:#666;
+}
+.ruby p a{
+	font-size: 15px
+}
+.contentRightCenter input{
+	width: 250px;
+	height: 30px;
+	border:1px solid #F0EBF0;
+	float: left;
+	margin:11 0 0 13px;
+}
+.contentRightCenter span{
+	width: 78px;
+	height: 25px;
+	float: left;
+	background-color: #F5F5F5;
+	text-align: center;
+	font-size: 14px;
+	padding-top: 7px;
+	margin-top: 11px;
+	color:#333333;
+}
+.contentRightCenter p{
+	float: left;
+	font-size: 12px;
+	color:#333333;
+	margin:18px 0 0 16px;
+}
+.contentRightCenter img{
+	float: left;
+	margin:20px 0 0 0;
+}
+
+
+
+/*中间复杂部分样式*/
+.bigTable{
+	
+	margin:68 0 0 13px;
+	width: 1595px;
+	
+}
+.bigTable .tr1{
+	height: 36px;
+	background-color: #F1F1F1;
+	text-align: center
+}
+.bigTable .td1{
+	width: 440px;
+
+}
+
+.bigTable .td2{
+	width: 140px;
+
+}
+.bigTable .td3{
+	width: 90px
+}
+.bigTable .td4{
+	width: 124px
+}
+.bigTable .td5{
+	width: 250px
+}
+.bigTable .td6{
+	width: 172px
+}
+.bigTable .td7{
+	width: 210px
+}
+.bigTable .td7 select{
+	width: 98px;
+	background-color: white;
+	border:1px solid black;
+}
+.bigTable .td8{
+	width: 160px
+}
+.tr2{
+	height: 44px;
+
+}
+.tr2 td{
+	height:44px;
+}
+.tr2 td input{
+	float: left;
+	margin:10 0 0 22;
+}
+.tr2 td p{
+	float: left;
+	margin:8 0 0 5;
+}
+.tr2 td span{
+	margin-top:5px;
+	width: 65px;
+	height: 23px;
+	float: left;
+	border:1px solid #DCDCDC;
+	text-align: center;
+	line-height: 23px;
+	margin-left: 15px
+}
+.tr2 td span.more{
+	width: 90px
+}
+.tr3 td{
+	height: 37px;
+	border-top:1px solid #E8E8E8;
+	border-left:1px solid #E8E8E8;
+	border-right:1px solid #E8E8E8;
+	background-color: #F5F5F5;
+}
+.tr3 td input{
+	margin:8 0 0 22;
+}
+.tr3 td b{
+	margin-left: 5px;
+	margin-top: 0px;
+	font-size: 13px
+}
+.tr3 td p{
+	width: 200px;
+	margin-top: -18px;
+	margin-left:150px
+}
+.tr4 td{
+	height: 132px;
+}
+.tr4 td .imgDiv{
+	width: 84px;
+	height: 86px;
+	border:1px solid #E8E8E8;
+	margin:0 0 0 21;
+	float:left;
+}
+.tr4 td p{
+	width: 280px;
+	float: left;
+	margin-left: 25px;
+	font-size: 14px;
+	color: black;
+	
+}
+.tr4 td p font{
+	color: #666
+}
+.tr4 td .img{
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px
+
+}
+.tdBorder{
+	border-right:1px solid #E8E8E8
+}
+.leftBorder{
+	border-left:1px solid #E8E8E8
+}
+.tr4 td .img1{
+	margin-left:133px;
+}
+.tr4 td{
+	text-align: center;
+	color: black;
+	margin-top:0px;
+	vertical-align: top;
+	padding-top: 10px;
+	font-size: 13px
+}
+.tr5 td{
+	border-top:1px solid #E8E8E8;
+	height:40px;
+	text-align: center;
+	color: black
+}
+
+.lastTr td{
+	border-top:1px solid #E8E8E8;
+	height:62px;
+}
+.lastTr td input{
+	float: left;
+	margin:-10 0 0 22;
+}
+.lastTr td p{
+	float: left;
+	margin:-12 0 0 5;
+}
+.lastTr td span{
+	margin-top:-12px;
+	width: 65px;
+	height: 23px;
+	float: left;
+	border:1px solid #DCDCDC;
+	text-align: center;
+	line-height: 23px;
+	margin-left: 15px
+}
+.lastTr td span.more{
+	width: 90px
+}
+
+.single{
+	height: 390px
+}
+.single ul li{
+	float: left;
+	margin-left:47px;
+	margin-top: 40px
+}
+.singleFont{
+	margin-top: 22px;
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 15px
+}
+.singleFont span{
+	float: right;
+	margin-right: 20px
+}
+.single ul li font{
+	color: red;
+	font-size: 20px
+}
+.single ul li p{
+	font-size: 14px
+}
+
+
+
+
+

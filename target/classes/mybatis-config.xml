@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 引入database.properties文件中的值 -->
+	<properties resource="db.properties" />
+
+	<settings>
+		<!-- MyBatis 利用本地缓存机制（Local Cache）防止循环引用（circular references）和加 速重复嵌套查询。 
+			默认值为 SESSION，这种情况下会缓存一个会话中执行的所有查询。 若设置值为 STATEMENT，本地会话仅用在语句执行上，对相同 SqlSession 
+			的不同调用将不会共享数据。 -->
+		<setting name="localCacheScope" value="STATEMENT" />
+	</settings>
+
+	<!-- 设置类的别名 -->
+	<typeAliases>
+		<package name="com.briup.bean" />
+	</typeAliases>
+
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="${jdbc.driver}" />
+				<property name="url" value="${jdbc.url}" />
+				<property name="username" value="${jdbc.username}" />
+				<property name="password" value="${jdbc.password}" />
+			</dataSource>
+		</environment>
+	</environments>
+
+	<!-- 配置映射文件的位置 -->
+	<mappers>
+		<mapper resource="mappers/CustomerMapper.xml" />
+		<mapper resource="mappers/categoryMapper.xml" />
+		<mapper resource="mappers/BookMapper.xml" />
+		<mapper resource="mappers/shopAddressMapper.xml" />
+		<mapper resource="mappers/OrderFormMapper.xml" />
+		<mapper resource="mappers/OrderLineMapper.xml" />
+	</mappers>
+</configuration>

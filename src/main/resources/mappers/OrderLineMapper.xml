@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.briup.dao.OrderLineMapper">
+   
+   <insert id="saveOrderLine" parameterType="orderline" useGeneratedKeys="true" keyProperty="id">
+      insert into es_orderline(num,cost,book_id,orderForm_id)
+      values(#{num},#{cost},#{book.id},#{orderForm.id})
+   </insert>
+   
+   <resultMap type="orderLine" id="OrderLineResult">
+      <id property="id" column="id"/>
+      <result property="num" column="num"/>
+      <result property="cost" column="cost"/>
+      <association property="book" column="book_id" select="findBookByBookId"></association>
+      <association property="orderForm" column="orderForm_id" select="findOrderFormById"></association>
+   </resultMap>
+   
+   <select id="findOrderLineByOrderId" parameterType="int" resultMap="OrderLineResult">
+   		select id,num,cost,book_id,orderForm_id
+   		from es_orderline
+   		where orderForm_id=#{id}
+   </select>
+   
+   <select id="findBookByBookId" parameterType="int" resultType="book">
+       select id,name,price,author,publisher,pubDate,description,image
+       from es_book
+       where id = #{id}
+   </select>
+   
+   <select id="findOrderFormById" parameterType="int" resultType="orderForm">
+       select id,cost,orderDate
+       from es_orderform
+       where id = #{id}
+   </select>
+   
+   
+   <delete id="deleteOrderLineByCollection">
+   		delete from es_orderline
+   		where id in
+   		  <foreach collection="list" item="orderLines" open="(" close=")" separator=",">
+   		     #{orderLines.id}
+   		  </foreach>
+   </delete>
+   
+</mapper>
